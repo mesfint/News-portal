@@ -26,7 +26,7 @@ const useFetchArticles = (currentPage: number) => {
 
           try {
               const response = await axios.get(
-                  'https://newsapi.org/v2/everything?q=ai&language=en&apiKey=f7a77facaf6444c49a649f81139c7fb5'
+                  'https://newsapi.org/v2/everything?q=ai&language=en&apiKey=process.env.API_KEY'
               );
 
               if (response.status === 200) {
